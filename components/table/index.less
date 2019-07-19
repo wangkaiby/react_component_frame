@@ -1,0 +1,171 @@
+
+.coral-table{
+	&.odd {
+		.ant-table{
+			table{
+				.ant-table-tbody > tr {
+					&:nth-child(odd){
+						td {
+							background: @table-selected-row-bg;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.even {
+		.ant-table{
+			table{
+				.ant-table-tbody > tr {
+					&:nth-child(even){
+						td {
+							background: @table-selected-row-bg;
+						}
+					}
+				}
+			}
+		}
+	}
+	// 无边框表格
+	&.no-border{
+		border:0px;
+	}
+	// 序号
+	.number{
+		width: 62px;
+		max-width: 62px;
+	}
+	// 电话
+	.tel{
+		width: 132px;
+		max-width: 132px;
+	}
+	// 大小
+	.size{
+		width: 82px;
+		max-width: 82px;
+	}
+	//2018-10-10
+	.date{
+		width: 92px;
+		max-width: 92px;
+	} 
+	//2018-10-10 12:200
+	.data-time{
+		width: 132px;
+		max-width: 132px;
+	}
+	.ant-table-tbody > tr > td:extend(.ellipsis){}
+	// 防止表格撑破
+	table{
+		overflow-x:no; 
+		word-wrap:break-word;
+		word-break:break-all;
+		TABLE-LAYOUT: fixed;
+	}
+}
+//覆盖小表格样式
+.coral-table-small{
+	.ant-table-small{
+		border-radius: 0px;
+		.ant-table-body > table{
+			padding: 0px;
+		}
+		.ant-table-header > table {
+			padding: 0px;
+		}
+		table{
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			.ant-table-thead > tr > th {
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+			.ant-table-tbody > tr > td {
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+			
+		}
+		// 序号
+		.number{
+			width: 46px;
+			max-width: 46px;
+		}
+		// 电话
+		.tel{
+			width: 116px;
+			max-width: 116px;
+		}
+		// 大小
+		.size{
+			width: 66px;
+			max-width: 66px;
+		}
+		//
+		.date{
+			width: 76px;
+			max-width: 76px;
+		} 
+		.data-time{
+			width: 116px;
+			max-width: 116px;
+		}
+		
+	}
+	// 小table下自带边框，所以有border情况下，去掉小table的边框
+	&.border{
+		border: 0px;
+	}
+}
+// 默认表格
+.coral-table-middle{
+	.ant-table-large {
+		border-radius: 0px;
+		.ant-table-body{
+			.ant-table-thead > tr > th {
+				padding: 9px 16px;
+				border-bottom: 1px solid @table-border-color;
+			}
+			.ant-table-tbody > tr > td {
+				padding: 9px 16px;
+			}
+			table{
+				border-top-left-radius: 0px;
+				border-top-right-radius: 0px;
+			}
+		}
+	}
+	&.no-border{
+		.ant-table-tbody > tr:last-child > td {
+			border-bottom: 0px;
+		}
+	}
+}
+// 大表格
+.coral-table-large{
+	.ant-table-large {
+		border-radius: 0px;
+		.ant-table-body{
+			.ant-table-thead > tr > th {
+				padding-top: 16px;
+				padding-bottom: 16px;
+				border-bottom: 1px solid @table-border-color;
+			}
+			.ant-table-tbody > tr > td {
+				padding-top: 16px;
+				padding-bottom: 16px;
+			}
+			table{
+				border-top-left-radius: 0px;
+				border-top-right-radius: 0px;
+			}
+		}
+	}
+	&.no-border{
+		.ant-table-tbody > tr:last-child > td {
+			border-bottom: 0px;
+		}
+	}
+}
+

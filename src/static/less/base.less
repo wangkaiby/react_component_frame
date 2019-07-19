@@ -1,0 +1,173 @@
+
+// 基础类（无嵌套）
+//-------------------------------------------colors------------------------------------------>
+.transparent-bg{
+	background: transparent;
+}
+.white-bg{
+	background: @default-color;
+}
+
+.warn{
+	color:@warning-color;
+};
+//-------------------------------------------font------------------------------------------>
+// 基数为2
+.font-5{
+	.fontSize(10);
+}
+.font-4{
+	.fontSize(9);
+}
+.font-3{
+	.fontSize(8);
+}
+.font-2{
+	.fontSize(7);
+}
+.font-1{
+	.fontSize(6);
+}
+//灰度 
+.gray-1{
+	color:@gray1-color;
+}
+.gray-2{
+	color:@gray2-color;
+}
+.gray-3{
+	color:@gray3-color;
+}
+.gray-4{
+	color:@gray4-color;
+}
+
+//-------------------------------------------box------------------------------------------>
+.inline-block{
+	display: inline-block;
+}
+.block{
+	display: block;
+}
+.flex-box{
+	display: flex;
+}
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.mt-1{
+	.margin(top,1);
+}
+.mt-2{
+	.margin(top,2);
+}
+.mt-3{
+	.margin(top,3);
+}
+.mt-4{
+	.margin(top,4);
+}
+.mb-1{
+	.margin(bottom,1);
+}
+.mb-2{
+	.margin(bottom,2);
+}
+.mb-3{
+	.margin(bottom,3);
+}
+.mb-4{
+	.margin(bottom,4);
+}
+.ml-1{
+	.margin(left,1);
+}
+.ml-2{
+	.margin(left,2);
+}
+.ml-3{
+	.margin(left,3);
+}
+.ml-4{
+	.margin(left,4);
+}
+.mr-1{
+	.margin(right,1);
+}
+.mr-2{
+	.margin(right,2);
+}
+.mr-3{
+	.margin(right,3);
+}
+.mr-4{
+	.margin(right,4);
+}
+
+.pt-1{
+	.padding(top,1);
+}
+.pt-2{
+	.padding(top,2);
+}
+.pt-3{
+	.padding(top,3);
+}
+.pt-4{
+	.padding(top,4);
+}
+.pb-1{
+	.padding(bottom,1);
+}
+.pb-2{
+	.padding(bottom,2);
+}
+.pb-3{
+	.padding(bottom,3);
+}
+.pb-4{
+	.padding(bottom,4);
+}
+
+.pl-1{
+	.padding(left,1);
+}
+.pl-2{
+	.padding(left,2);
+}
+.pl-3{
+	.padding(left,3);
+}
+.pl-4{
+	.padding(left,3);
+}
+.pr-1{
+	.padding(right,1);
+}
+.pr-2{
+	.padding(right,2);
+}
+.pr-3{
+	.padding(right,3);
+}
+.pr-4{
+	.padding(right,4);
+}
+.border{
+	border:1px solid @border-color-base;
+}
+
+
+//-------------------------------------------position------------------------------------------>
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}

@@ -1,0 +1,58 @@
+//-------------------------------------------font------------------------------------------>
+
+.fontSize(@size:1){
+	font-size: unit(2 * @size,px);
+}
+.fontWeight(@bold:600){
+	font-weight: @bold;
+}
+
+
+//-------------------------------------------box------------------------------------------>
+
+.clearfix() {
+	zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+		visibility: hidden;
+		font-size: 0;
+		height: 0;
+	}
+}
+
+.margin(@position,@level){
+	margin-@{position}: unit(@margin-base*@level, px); 
+}
+
+.padding(@position,@level){
+	padding-@{position}: unit(@padding-base*@level, px); 
+}
+
+// @positionShorthandList:t,b,l,r;
+// @positionList:top,bottom,left,right;
+// @levelList:5,10,15;
+// .loopPos(@i) when (@i < length(@positionShorthandList)){
+// 	.loopLevel(@j) when (@j < length(@levelList)){
+// 		@pos:extract(@positionShorthandList, @i);
+// 		@level:extract(@levelList, @j);
+// 		.m@{pos}-@{level}{
+// 			color:red;
+// 			.margin(2, @level);
+// 		}
+// 		.loopLevel(@j+1);
+// 	}
+// 	.loopLevel(0);
+//     .loopPos(@i+1);
+// }
+// .loopPos(0);
+
+
+
+.mt(@level){
+	.margin(top,@level);
+}

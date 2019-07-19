@@ -1,0 +1,18 @@
+{
+    "presets": [
+        "env",
+        "react",
+        "stage-2"
+    ],
+    "plugins": [
+        "emotion",
+        "react-hot-loader/babel",
+        [
+            "transform-runtime",
+            {
+                "regenerator": true,
+                "moduleName": "babel-runtime"
+            }
+        ]
+    ]
+}

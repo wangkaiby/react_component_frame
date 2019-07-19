@@ -1,0 +1,64 @@
+
+
+.coral-btn{
+	// 成功按钮
+	&.success-btn{
+		background-color: @success-color ;
+		border-color:@success-color;
+		color:#fff;
+		&:hover, &:focus{
+			color:#fff;
+			background-color: color(~`colorPalette("@{success-color}", 5)`) ;
+			border-color: color(~`colorPalette("@{success-color}", 5)`);
+		}
+		&.active,&:active{
+			color:#fff;
+			background-color: color(~`colorPalette("@{success-color}", 6)`) ;
+			border-color: color(~`colorPalette("@{success-color}", 6)`);
+		}
+	}
+	
+	// 警告按钮
+	&.caution-btn{
+		background-color: @caution-color ;
+		border-color:@caution-color;
+		color:#fff;
+		&:hover, &:focus{
+			color:#fff;
+			background-color: color(~`colorPalette("@{caution-color}", 5)`) ;
+			border-color: color(~`colorPalette("@{caution-color}", 5)`);
+		}
+		&.active,&:active{
+			color:#fff;
+			background-color: color(~`colorPalette("@{caution-color}", 6)`) ;
+			border-color: color(~`colorPalette("@{caution-color}", 6)`);
+		}
+	}
+
+	&.text-btn{
+		cursor: pointer;
+		&.normal{
+			color:@primary-color ;
+		}
+		&:active{
+			color: color(~`colorPalette("@{primary-color}", 7)`); 
+		}
+		&.disabled{
+			cursor: no-drop;
+			color: @disabled-color  ;
+		}
+	}
+	&.self-icon-btn{
+		.anticon{
+			display: none;
+		}
+		>*{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.self-icon{
+			margin-right: 8px;
+		}
+	}
+
+}
